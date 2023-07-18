@@ -139,3 +139,9 @@ body{
 }
 
 
+@media (min-width: 768px) {
+    .muñeco{
+        display: none;
+    }
+  }
+  
