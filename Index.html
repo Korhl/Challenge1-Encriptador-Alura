@@ -4,8 +4,11 @@
 	<meta name="viewport" content="width=device-width">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Challenge - Desenciptador</title>
-	<link rel="stylesheet" href="C:\Users\luise\OneDrive\Documentos\Challenge 1 Alura\css\reset.css">
-	<link rel="stylesheet" href="C:\Users\luise\OneDrive\Documentos\Challenge 1 Alura\css\Style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,300;0,400;0,700;1,500;1,600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/Style.css">
 </head>
 	<header>
 			<h1 class="Logo"><img src="./assets/Logo.png"></h1>
@@ -14,15 +17,16 @@
 	<main>
 	<section class="textos">
 		<div class="encriptar--container">
-				<input id="texto1" class="texto1" placeholder="Ingrese su texto aquí"></input>
+				<input id="texto1" class="texto1" placeholder="Ingrese su texto aquí" type="text" data-form-input></input>
 				<section class="caja-botones">
 					<p class="MSJ"> &#x1f6c8; Solo letras minúsculas y sin acentos</p>
-									<div class="botones"><ul>
+									<div class="botones">
+									<ul>
 										<li>
-											<h2><button class="caja_botonE">Encriptar</button></h2>
+											<button id="botonE" class="caja_botonE" data-form-btnE>Encriptar</button>
 										</li>
 										<li>
-											<h2><button class="caja_botonD">Desencriptar</button></h2>
+											<button id="botonD" class="caja_botonD" data-form-btnD>Desencriptar</button>
 										</li>
 									</ul>
 									</div>
@@ -31,12 +35,23 @@
 	</section>
 		<section class="resultado">	
 			<div class="container-resultado">
-					<img class="muñeco" src="./assets/Muñeco.png">
-					<input class="respuesta" type="text" placeholder="Ningun mensaje encontrado fué encontrado"></input>
-					<input class="trabajo" placeholder="Ingrese el texto que desea encriptar o desencriptar"></input>
-			</div>	
+				<div id="mono" class="mono">
+				 	<img id="figura" class="muñeco" src="./assets/Muñeco.png"></img>
+				</div>
+			<section class="answer-container">
+				<div id="ans" class="answer" data-answer>
+					<span class="respuesta" type="text" id="respuesta" type="text">Ningún mensaje fué encontrado</span>
+				</div id="desc" class="desencriptado">
+					<input id="desc" class="trabajo" type="text" placeholder="Ingrese el texto que desea desencriptar" data-form-desc></input>
+				</div>
+				<div class="copiar">
+					<li>
+						<button id="botonC" class="caja_botonC" data-form-btnC>Copiar</button>
+					</li>
+				</div>
+			</section>	
 		</section>
-		<script src="/js/encriptador.js" type="module"></script>
+		<script src="./js/encriptador.js" type="module"></script>
 	</main>	
 </body>
 </html>
