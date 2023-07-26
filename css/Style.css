@@ -88,9 +88,9 @@ body{
 
 .copiar{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
-    padding-top: 57vh;
+    padding-top: 40vh;
 }
 
 .copiar li{
@@ -100,7 +100,7 @@ body{
 
 .caja_botonC{
     padding: 3vh;
-    width: 45vh;
+    width: 40vh;
 
     background-color:#F3F5FC;
     color: #0A3871;
@@ -123,13 +123,13 @@ body{
     display: flex;
     flex-direction: column;
 
-    width: 30%;
+    width: 23%;
     height: 85vh;
 
     background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 3rem;
-    box-shadow: 4rem lightslategray;
+    box-shadow: 6rem lavender;
 }
 
 .container-resultado{
