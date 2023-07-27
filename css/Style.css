@@ -84,13 +84,14 @@ body{
     border-radius: 1rem;
     border-color: #0A3871;
     margin-left: 2rem;
+    
 }
 
 .copiar{
-    display: flex;
-    justify-content: flex-start;
+    display: inline-block;
+    position: static;
 
-    padding-top: 40vh;
+    padding-top: 55vh;
 }
 
 .copiar li{
@@ -115,6 +116,10 @@ body{
 
 .MSJ{
     opacity: 80%;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
 }
 
 /*sección Resultado*/
@@ -155,7 +160,7 @@ body{
 }
 
 .respuesta{
-    font-style: 'Inter';
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 24px;
 
@@ -165,12 +170,12 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 10vh;
+    padding-top: 5vh;
 
 }
 
-.trabajo{
-    font-style: Inter;
+.descripcion{
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
 
@@ -179,6 +184,9 @@ body{
 
     background: none;
     border: none;
+
+    padding-top: 2.5vh;
+
 }
 
 
@@ -200,17 +208,17 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
-        width: 90%;
-        height: 20vh;
 
-        margin-top: 1rem;
+        margin-top: 2vh;
         margin-left: 2rem;
+
+        width: 90%;
+        height: 5%;
 
     }
 
     .caja-botones{
-        padding-top: 40%;
+        padding-top: 20%;
         
     }
     
@@ -222,9 +230,22 @@ body{
         width: 30vh;
         margin-left: 2rem;
     }
+
+    .copiar{
+        padding-top: 0.8rem;
+        padding-left: 3.5vh;
+        padding-bottom: 0.5rem;
+    }
+
+    .caja_botonC{
+        width: 90%;
+    };
 }
 
 @media (max-width: 420px){
+    .texto1{
+        width: 100%;
+    }
     .botones ul{
         flex-direction: column;
         justify-content: center;
@@ -248,4 +269,12 @@ body{
         margin-left: 0;
         margin-top: 1rem;
     }
-}
+    .copiar{
+        padding-left: 0;
+    }
+    .caja_botonC{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    };
+};

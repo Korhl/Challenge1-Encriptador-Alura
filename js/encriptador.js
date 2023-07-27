@@ -118,6 +118,6 @@ const btnD = document.querySelector('[data-form-btnD]');
     document.body.removeChild(tempInput);
   };
 
-btnD.addEventListener('click', desencriptar, mensajeVacío);
-btn.addEventListener('click', encriptar, mensajeVacío);
-btnC.addEventListener('click', copiar)
+btnD.addEventListener('click', desencriptar);
+btn.addEventListener('click', encriptar);
+btnC.addEventListener('click', copiar);
